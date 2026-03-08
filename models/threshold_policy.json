@@ -1,0 +1,7 @@
+{
+  "global_threshold": 0.62,
+  "DoS Attack": 0.6,
+  "Probe Attack": 0.7200000000000001,
+  "R2L Attack": 0.74,
+  "U2R Attack": 0.73
+}

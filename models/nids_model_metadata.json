@@ -1,0 +1,151 @@
+{
+  "best_model_name": "Random Forest",
+  "trained_at": "2026-03-08T13:58:22.824704+00:00",
+  "train_test_split_ratio": 0.2,
+  "dataset_profile": "nsl_kdd",
+  "model_comparison": [
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.968,
+      "balanced_accuracy": 0.8547619047619047,
+      "precision_macro": 0.9468531468531468,
+      "recall_macro": 0.8547619047619047,
+      "f1_macro": 0.8698889871303666,
+      "cv_f1_macro": 0.8690585554366645,
+      "selection_score": 0.8697229007916263,
+      "train_seconds": 1.332
+    },
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.938,
+      "balanced_accuracy": 0.8141870788644061,
+      "precision_macro": 0.8368552500131446,
+      "recall_macro": 0.8141870788644061,
+      "f1_macro": 0.8205502489532093,
+      "cv_f1_macro": 0.8147719529859414,
+      "selection_score": 0.8193945897597558,
+      "train_seconds": 2.25
+    },
+    {
+      "model_name": "Decision Tree",
+      "accuracy": 0.93,
+      "balanced_accuracy": 0.7845258491746214,
+      "precision_macro": 0.7852546824540265,
+      "recall_macro": 0.7845258491746214,
+      "f1_macro": 0.7831118549506945,
+      "cv_f1_macro": 0.7799055368421121,
+      "selection_score": 0.782470591328978,
+      "train_seconds": 0.049
+    }
+  ],
+  "class_order": [
+    "Normal Traffic",
+    "DoS Attack",
+    "Probe Attack",
+    "R2L Attack",
+    "U2R Attack"
+  ],
+  "confusion_matrix": [
+    [
+      309,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      91,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      51,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      3,
+      25,
+      0
+    ],
+    [
+      0,
+      0,
+      12,
+      1,
+      8
+    ]
+  ],
+  "classification_report": {
+    "Normal Traffic": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 309.0
+    },
+    "DoS Attack": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 91.0
+    },
+    "Probe Attack": {
+      "precision": 0.7727272727272727,
+      "recall": 1.0,
+      "f1-score": 0.8717948717948718,
+      "support": 51.0
+    },
+    "R2L Attack": {
+      "precision": 0.9615384615384616,
+      "recall": 0.8928571428571429,
+      "f1-score": 0.9259259259259259,
+      "support": 28.0
+    },
+    "U2R Attack": {
+      "precision": 1.0,
+      "recall": 0.38095238095238093,
+      "f1-score": 0.5517241379310345,
+      "support": 21.0
+    },
+    "accuracy": 0.968,
+    "macro avg": {
+      "precision": 0.9468531468531468,
+      "recall": 0.8547619047619047,
+      "f1-score": 0.8698889871303666,
+      "support": 500.0
+    },
+    "weighted avg": {
+      "precision": 0.9746643356643355,
+      "recall": 0.968,
+      "f1-score": 0.9639473425680323,
+      "support": 500.0
+    }
+  },
+  "label_distribution": {
+    "Normal Traffic": 1547,
+    "DoS Attack": 453,
+    "Probe Attack": 255,
+    "R2L Attack": 142,
+    "U2R Attack": 103
+  },
+  "threshold_recommendations": {
+    "global_threshold": 0.62,
+    "DoS Attack": 0.6,
+    "Probe Attack": 0.7200000000000001,
+    "R2L Attack": 0.74,
+    "U2R Attack": 0.73
+  },
+  "threshold_policy": {
+    "global_threshold": 0.62,
+    "DoS Attack": 0.6,
+    "Probe Attack": 0.7200000000000001,
+    "R2L Attack": 0.74,
+    "U2R Attack": 0.73
+  }
+}
